@@ -1,0 +1,54 @@
+.carousel {
+  height: 60vh; /* puedes cambiar este valor */
+  width: auto;
+  margin: 0 auto; /* centrado horizontal */
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.center-image {
+  height: 50vh;
+  width: auto;
+  border: 5px solid gold;
+  border-radius: 10px;
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.side-image {
+  height: 40vh;
+  width: auto;
+  opacity: 0.6;
+  border-radius: 10px;
+  transition: opacity 0.3s;
+}
+
+button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffcc00;
+  cursor: pointer;
+  width: auto;          /* evitar ocupar todo el ancho */
+  display: block;       /* necesario para que margin auto funcione correctamente */
+  margin-left: auto;    /* centrar horizontalmente */
+  margin-right: auto;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
